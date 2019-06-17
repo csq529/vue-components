@@ -11,6 +11,7 @@ import { store, mutations } from "@/store";
 export default {
   data () {
     return {
+      c: ''
     }
   },
   computed: {

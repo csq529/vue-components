@@ -66,6 +66,9 @@
       <router-link tag="li" :to="{path: '/voservable'}">
         <button>voservable</button>
       </router-link>
+      <router-link tag="li" :to="{path: '/SliderBar'}">
+        <button>SliderBar</button>
+      </router-link>
     </ul>
   </div>
 </template>

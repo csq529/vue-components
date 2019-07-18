@@ -104,7 +104,9 @@ const VObservable = r =>
     () => r(require("./views/VObservable/VObservable")),
     "VObservable"
   );
-
+// SliderBar
+const SliderBar = r =>
+  require.ensure([], () => r(require("./views/SliderBar")), "SliderBar");
 Vue.use(Router);
 
 export default new Router({
@@ -224,6 +226,11 @@ export default new Router({
       path: "/voservable",
       name: "VObservable",
       component: VObservable
+    },
+    {
+      path: "/sliderBar",
+      name: "SliderBar",
+      component: SliderBar
     }
   ]
 });

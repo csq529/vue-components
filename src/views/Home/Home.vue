@@ -66,8 +66,11 @@
       <router-link tag="li" :to="{path: '/voservable'}">
         <button>voservable</button>
       </router-link>
-      <router-link tag="li" :to="{path: '/SliderBar'}">
-        <button>SliderBar</button>
+      <router-link tag="li" :to="{path: '/sliderBar'}">
+        <button>左滑菜单</button>
+      </router-link>
+      <router-link tag="li" :to="{path: '/conponentCommunication'}">
+        <button>组件通信</button>
       </router-link>
     </ul>
   </div>

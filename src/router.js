@@ -104,9 +104,12 @@ const VObservable = r =>
     () => r(require("./views/VObservable/VObservable")),
     "VObservable"
   );
-// SliderBar
+// 左滑菜单SliderBar
 const SliderBar = r =>
   require.ensure([], () => r(require("./views/SliderBar")), "SliderBar");
+// 组件通信
+const ConponentCommunication = r =>
+  require.ensure([], () => r(require("./views/ConponentCommunication")), "ConponentCommunication");
 Vue.use(Router);
 
 export default new Router({
@@ -231,6 +234,11 @@ export default new Router({
       path: "/sliderBar",
       name: "SliderBar",
       component: SliderBar
+    },
+    {
+      path: "/conponentCommunication",
+      name: "ConponentCommunication",
+      component: ConponentCommunication
     }
   ]
 });

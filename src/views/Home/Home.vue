@@ -70,7 +70,10 @@
         <button>左滑菜单</button>
       </router-link>
       <router-link tag="li" :to="{path: '/conponentCommunication'}">
-        <button>组件通信</button>
+        <button>父子组件通信</button>
+      </router-link>
+      <router-link tag="li" :to="{path: '/eventBus'}">
+        <button>Event Bus</button>
       </router-link>
     </ul>
   </div>

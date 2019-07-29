@@ -117,6 +117,9 @@ const ConponentCommunication = r =>
 // Event Bus
 const EventBus = r =>
   require.ensure([], () => r(require("./views/EventBus")), "EventBus");
+// 其他的demo
+const OtherDemo = r =>
+  require.ensure([], () => r(require("./views/OtherDemo")), "OtherDemo");
 Vue.use(Router);
 
 export default new Router({
@@ -251,6 +254,11 @@ export default new Router({
       path: "/eventBus",
       name: "EventBus",
       component: EventBus
+    },
+    {
+      path: "/otherDemo",
+      name: OtherDemo,
+      component: OtherDemo
     }
   ]
 });

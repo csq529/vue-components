@@ -1,6 +1,9 @@
 <template>
   <div>
     <ul>
+      <router-link tag="li" :to="{path: '/otherDemo'}">
+        <button>OtherDemo</button>
+      </router-link>
       <router-link tag="li" :to="{path: '/toast'}">
         <button>ref</button>
       </router-link>

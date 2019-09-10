@@ -18,7 +18,7 @@ export default {
   display: block
   width: .32rem
   height: .32rem
-  background: url('../../assets/more_arrow.png') no-repeat center center
+  background: url('../../assets/images/more_arrow.png') no-repeat center center
   animation: arrow .4s infinite alternate
 }
 

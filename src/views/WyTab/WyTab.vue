@@ -160,5 +160,5 @@ export default {
   -webkit-transform: rotate(180deg)
   -ms-transform: rotate(180deg)
   transform: rotate(180deg)
-  background: url('../../assets/arrow-down.png') no-repeat center center
+  background: url('../../assets/images/arrow-down.png') no-repeat center center
 </style>

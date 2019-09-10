@@ -8,7 +8,7 @@ import "./config/rem";
 // import moment from 'moment'
 
 // 重置样式
-import "./assets/base.styl";
+import "./assets/css/base.styl";
 Vue.config.productionTip = false;
 
 // Vue.filter('dateformat', function (dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {

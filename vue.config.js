@@ -26,7 +26,7 @@ module.exports = {
     sourceMap: false
   },
   devServer: {
-    open: false,
+    open: true,
     host: "0.0.0.0",
     port: 9001,
     https: false,

@@ -70,21 +70,21 @@ export default {
       const start = window.pageYOffset
       console.log('start:', start)
       // 无动效
-      // window.scrollTo(0, 0)
+      window.scrollTo(0, 0)
       // 有动效
-      let i = 0
-      this.isMoving = true
-      this.interval = setInterval(() => {
-        const next = Math.floor(this.easeInOutQuad(10 * i, start, -start, 500))
-        if (next <= this.backPosition) {
-          window.scrollTo(0, this.backPosition);
-          clearInterval(this.interval)
-          this.isMoving = false
-        } else {
-          window.scrollTo(0, next)
-        }
-        i++
-      }, 16.7)
+      // let i = 0
+      // this.isMoving = true
+      // this.interval = setInterval(() => {
+      //   const next = Math.floor(this.easeInOutQuad(10 * i, start, -start, 500))
+      //   if (next <= this.backPosition) {
+      //     window.scrollTo(0, this.backPosition);
+      //     clearInterval(this.interval)
+      //     this.isMoving = false
+      //   } else {
+      //     window.scrollTo(0, next)
+      //   }
+      //   i++
+      // }, 16.7)
     },
     easeInOutQuad (t, b, c, d) {
       if ((t /= d / 2) < 1) return c / 2 * t * t + b

@@ -120,6 +120,28 @@ const EventBus = r =>
 // 其他的demo
 const OtherDemo = r =>
   require.ensure([], () => r(require("./views/OtherDemo")), "OtherDemo");
+// 返回顶部
+const ScrollTop = r =>
+  require.ensure(
+    [],
+    () => r(require("./views/ScrollTop/ScrollTop.vue")),
+    "ScrollTop"
+  );
+
+const Editor = r =>
+  require.ensure([], () => r(require("./views/Editor/Editor.vue")), "Editor");
+const Editor1 = r =>
+  require.ensure(
+    [],
+    () => r(require("./views/Editor1/Editor1.vue")),
+    "Editor1"
+  );
+const CheckBox = r =>
+  require.ensure(
+    [],
+    () => r(require("./views/CheckBox/CheckBox.vue")),
+    "CheckBox"
+  );
 Vue.use(Router);
 
 export default new Router({
@@ -259,6 +281,26 @@ export default new Router({
       path: "/otherDemo",
       name: OtherDemo,
       component: OtherDemo
+    },
+    {
+      path: "/scrolltop",
+      name: ScrollTop,
+      component: ScrollTop
+    },
+    {
+      path: "/editor",
+      name: Editor,
+      component: Editor
+    },
+    {
+      path: "/zx-editor",
+      name: Editor1,
+      component: Editor1
+    },
+    {
+      path: '/checkbox',
+      name: CheckBox,
+      component: CheckBox
     }
   ]
 });

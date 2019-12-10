@@ -78,6 +78,18 @@
       <router-link tag="li" :to="{path: '/eventBus'}">
         <button>Event Bus</button>
       </router-link>
+      <router-link tag="li" :to="{path: '/scrolltop'}">
+        <button>ScrollTop</button>
+      </router-link>
+      <router-link tag="li" :to="{path: '/editor'}">
+        <button>Editor</button>
+      </router-link>
+      <router-link tag="li" :to="{path: '/zx-editor'}">
+        <button>ax-Editor</button>
+      </router-link>
+      <router-link tag="li" :to="{path: '/checkbox'}">
+        <button>checkbox</button>
+      </router-link>
     </ul>
   </div>
 </template>

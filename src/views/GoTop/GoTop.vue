@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="gotop-container" ref="gotopContainer">
     <div class="gotop-content">
       <ul>

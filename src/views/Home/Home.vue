@@ -90,6 +90,9 @@
       <router-link tag="li" :to="{path: '/checkbox'}">
         <button>checkbox</button>
       </router-link>
+      <router-link tag="li" :to="{path: '/swiper'}">
+        <button>Swiper</button>
+      </router-link>
     </ul>
   </div>
 </template>

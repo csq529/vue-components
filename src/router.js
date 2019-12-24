@@ -142,6 +142,12 @@ const CheckBox = r =>
     () => r(require("./views/CheckBox/CheckBox.vue")),
     "CheckBox"
   );
+  const Swiper = r =>
+  require.ensure(
+    [],
+    () => r(require("./views/Swiper/index.vue")),
+    "Swiper"
+  );
 Vue.use(Router);
 
 export default new Router({
@@ -298,9 +304,14 @@ export default new Router({
       component: Editor1
     },
     {
-      path: '/checkbox',
+      path: "/checkbox",
       name: CheckBox,
       component: CheckBox
+    },
+    {
+      path: "/swiper",
+      name: Swiper,
+      component: Swiper
     }
   ]
 });

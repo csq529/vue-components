@@ -12,6 +12,8 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 import "@/assets/css/swiper.css";
+import Cube from 'cube-ui'
+Vue.use(Cube)
 
 
 Vue.use(VueQuillEditor, /* { default global options } */)

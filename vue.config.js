@@ -4,12 +4,22 @@ const resolve = dir => path.join(__dirname, dir);
 const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
 module.exports = {
-  publicPath: "./", // 默认'/'，部署应用包时的基本 URL
-  outputDir: "dist", // 'dist', 生产环境构建文件的目录
-  assetsDir: "", // 相对于outputDir的静态资源(js、css、img、fonts)目录
+  // 默认'/'，部署应用包时的基本 URL
+  publicPath: "./",
+
+  // 'dist', 生产环境构建文件的目录
+  outputDir: "dist",
+
+  // 相对于outputDir的静态资源(js、css、img、fonts)目录
+  assetsDir: "",
+
   lintOnSave: false,
-  runtimeCompiler: true, // 是否使用包含运行时编译器的 Vue 构建版本
-  productionSourceMap: false, // 生产环境的 source map
+
+  // 是否使用包含运行时编译器的 Vue 构建版本
+  runtimeCompiler: true,
+
+  // 生产环境的 source map
+  productionSourceMap: false,
 
   chainWebpack: config => {
     // 添加别名
@@ -20,11 +30,19 @@ module.exports = {
   },
 
   configureWebpack: () => {},
+
   css: {
     modules: false,
-    extract: IS_PROD,
-    sourceMap: false
+    extract: false,
+    sourceMap: false,
+    loaderOptions: {
+      stylus: {
+        'resolve url': true,
+        'import': []
+      }
+    }
   },
+
   devServer: {
     open: true,
     host: "0.0.0.0",
@@ -37,5 +55,12 @@ module.exports = {
     //     changeOrigin: true
     //   }
     // }
+  },
+
+  pluginOptions: {
+    'cube-ui': {
+      postCompile: false,
+      theme: false
+    }
   }
 };

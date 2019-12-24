@@ -142,11 +142,13 @@ const CheckBox = r =>
     () => r(require("./views/CheckBox/CheckBox.vue")),
     "CheckBox"
   );
-  const Swiper = r =>
+const Swiper = r =>
+  require.ensure([], () => r(require("./views/Swiper/index.vue")), "Swiper");
+const CubeSwiper = r =>
   require.ensure(
     [],
-    () => r(require("./views/Swiper/index.vue")),
-    "Swiper"
+    () => r(require("./views/CubeSwiper/index.vue")),
+    "CubeSwiper"
   );
 Vue.use(Router);
 
@@ -312,6 +314,11 @@ export default new Router({
       path: "/swiper",
       name: Swiper,
       component: Swiper
+    },
+    {
+      path: "/cube-swiper",
+      name: CubeSwiper,
+      component: CubeSwiper
     }
   ]
 });

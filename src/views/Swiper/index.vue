@@ -19,21 +19,28 @@
           alt="down"
         />
       </div>
-      <div class="all-type-wrapper" v-if="showMoreType">
-        <ul class="all-type-list">
-          <li
-            class="goods-type"
-            v-for="(item, index) in navList"
-            :key="index"
-            @click="chooseMenu(index)"
-            :class="{ choosed: choosed === index }"
-          >
-            {{ item }}
-          </li>
-        </ul>
-      </div>
     </div>
 
+    <div class="all-type-wrapper" v-if="showMoreType">
+      <div class="type-title">
+        <h4>请选择</h4>
+        <div class="uparrow-wrapper" @click="moreType">
+          <img src="../../assets/images/up-arrow.png" alt="" />
+        </div>
+      </div>
+      <ul class="all-type-list">
+        <li
+          class="goods-type"
+          v-for="(item, index) in navList"
+          :key="index"
+          @click="chooseMenu(index)"
+          :class="{ choosed: choosed === index }"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+    <!-- 商品列表 -->
     <div class="goodslist-wrapper" ref="menuFoodsList">
       <ul ref="goodsList" class="goodslist">
         <li class="goods" v-for="(item, index) in goodsList" :key="index">
@@ -112,8 +119,6 @@ export default {
   methods: {
     moreType() {
       this.showMoreType = !this.showMoreType;
-      // eslint-disable-next-line no-console
-      console.log("showMoreType:", this.showMoreType);
     },
     scrollDong(target) {
       clearInterval(this.timer); // 防止加速
@@ -168,8 +173,6 @@ export default {
             this.choosed = index;
             this.navRoll.slideTo(index - 2);
           }
-          // eslint-disable-next-line no-console
-          console.log("choosed:", this.choosed);
         });
       });
     },
@@ -223,6 +226,24 @@ export default {
 }
 
 .all-type-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 102;
+  background: #fff;
+  .type-title {
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    position: relative;
+    .uparrow-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
   .all-type-list {
     display: flex;
     align-items: center;

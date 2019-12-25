@@ -96,6 +96,9 @@
       <router-link tag="li" :to="{ path: '/cube-swiper' }">
         <button>Cube-Swiper</button>
       </router-link>
+      <router-link tag="li" :to="{ path: '/Barrage' }">
+        <button>Barrage</button>
+      </router-link>
     </ul>
   </div>
 </template>

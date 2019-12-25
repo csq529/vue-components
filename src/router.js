@@ -150,6 +150,8 @@ const CubeSwiper = r =>
     () => r(require("./views/CubeSwiper/index.vue")),
     "CubeSwiper"
   );
+const Barrage = r =>
+  require.ensure([], () => r(require("./views/Barrage/index.vue")), "Barrage");
 Vue.use(Router);
 
 export default new Router({
@@ -319,6 +321,11 @@ export default new Router({
       path: "/cube-swiper",
       name: CubeSwiper,
       component: CubeSwiper
+    },
+    {
+      path: "/barrage",
+      name: Barrage,
+      component: Barrage
     }
   ]
 });

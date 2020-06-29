@@ -102,6 +102,9 @@
       <router-link tag="li" :to="{ path: '/LifeCycle' }">
         <button>自定义生命周期</button>
       </router-link>
+      <router-link tag="li" :to="{ path: '/AttrsDemo' }">
+        <button>AttrsDemo</button>
+      </router-link>
     </ul>
   </div>
 </template>

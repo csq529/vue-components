@@ -6,64 +6,88 @@
           <div class="scroll-box slide-container">
             <div class="slide-wrap">
               <ul class="nav_item">
-                <li class="item_li cur"><span>
-                  热门
-                  <em></em></span>
+                <li class="item_li cur">
+                  <span>
+                    热门
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  新鲜事
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    新鲜事
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  附近
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    附近
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  搞笑
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    搞笑
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  情感
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    情感
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  明星
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    明星
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  社会
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    社会
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  数码
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    数码
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  体育
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    体育
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  汽车
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    汽车
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  电影
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    电影
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
-                <li class="item_li"><span>
-                  游戏
-                  <em></em></span>
+                <li class="item_li">
+                  <span>
+                    游戏
+                    <em></em
+                  ></span>
                   <!---->
                 </li>
               </ul>
@@ -72,7 +96,9 @@
           <!---->
           <div class="lite-nav-sublist m-col-4">
             <ul class="m-auto-list">
-              <li class="m-auto-box cur"><span class="m-text-cut">热门</span></li>
+              <li class="m-auto-box cur">
+                <span class="m-text-cut">热门</span>
+              </li>
               <li class="m-auto-box"><span class="m-text-cut">新鲜事</span></li>
               <li class="m-auto-box"><span class="m-text-cut">附近</span></li>
               <li class="m-auto-box"><span class="m-text-cut">搞笑</span></li>
@@ -87,22 +113,22 @@
             </ul>
           </div>
         </div>
-        <div class="nav-plus m-box-center m-box-center-a"><i class="m-font m-font-arrow-down aniRotate"></i></div>
+        <div class="nav-plus m-box-center m-box-center-a">
+          <i class="m-font m-font-arrow-down aniRotate"></i>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
-  created () {
-    document.title = '仿微博tab'
+  created() {
+    document.title = "仿微博tab";
   }
-}
-
+};
 </script>
 <style lang="stylus" scoped>
 .lite-topbar .nav-main

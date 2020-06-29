@@ -152,6 +152,8 @@ const CubeSwiper = r =>
   );
 const Barrage = r =>
   require.ensure([], () => r(require("./views/Barrage/index.vue")), "Barrage");
+const LifeCycle = r =>
+  require.ensure([], () => r(require("./views/LifeCycle/index.vue")), "LifeCycle");
 Vue.use(Router);
 
 export default new Router({
@@ -326,6 +328,11 @@ export default new Router({
       path: "/barrage",
       name: Barrage,
       component: Barrage
+    },
+    {
+      path: "/LifeCycle",
+      name: LifeCycle,
+      component: LifeCycle
     }
   ]
 });

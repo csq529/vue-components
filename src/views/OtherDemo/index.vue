@@ -1,6 +1,7 @@
 <template>
   <div>
     <c-triangle></c-triangle>
+    <van-progress :percentage="50" />
   </div>
 </template>
 

@@ -4,19 +4,24 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 import "./config/rem";
+import Vant from "vant";
+import "vant/lib/index.css";
+import { init, bind } from "./utils/custom-life-cycle";
+// 初始化生命周期函数, 必须在Vue实例化之前确定合并策略
+init();
+Vue.use(Vant);
 
-import VueQuillEditor from 'vue-quill-editor'
+import VueQuillEditor from "vue-quill-editor";
 
 // require styles
-import 'quill/dist/quill.core.css'
-import 'quill/dist/quill.snow.css'
-import 'quill/dist/quill.bubble.css'
+import "quill/dist/quill.core.css";
+import "quill/dist/quill.snow.css";
+import "quill/dist/quill.bubble.css";
 import "@/assets/css/swiper.css";
-import Cube from 'cube-ui'
-Vue.use(Cube)
+import Cube from "cube-ui";
+Vue.use(Cube);
 
-
-Vue.use(VueQuillEditor, /* { default global options } */)
+Vue.use(VueQuillEditor /* { default global options } */);
 
 // import moment from 'moment'
 
@@ -29,9 +34,12 @@ Vue.config.productionTip = false;
 // })
 
 /* eslint-disable no-new */
-new Vue({
+const vm = new Vue({
   el: "#app",
   router,
   components: { App },
   template: "<App/>"
 });
+
+// 将rootVm 绑定到生命周期函数监听里面
+bind(vm);

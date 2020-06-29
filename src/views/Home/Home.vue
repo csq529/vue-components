@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul>
+    <ul class="flex-center">
       <router-link tag="li" :to="{ path: '/otherDemo' }">
         <button>OtherDemo</button>
       </router-link>
@@ -98,6 +98,9 @@
       </router-link>
       <router-link tag="li" :to="{ path: '/Barrage' }">
         <button>Barrage</button>
+      </router-link>
+      <router-link tag="li" :to="{ path: '/LifeCycle' }">
+        <button>自定义生命周期</button>
       </router-link>
     </ul>
   </div>

@@ -347,6 +347,11 @@ export default new Router({
       path: "/HookEvent",
       component: () => import("@/views/HookEvent"),
       name: "HookEvent"
+    },
+    {
+      path: "/observable",
+      component: () => import("@/views/observable"),
+      name: "observable"
     }
   ]
 });

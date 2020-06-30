@@ -108,6 +108,9 @@
       <router-link tag="li" :to="{ path: '/HookEvent' }">
         <button>HookEvent</button>
       </router-link>
+      <router-link tag="li" :to="{ path: '/observable' }">
+        <button>observable</button>
+      </router-link>
     </ul>
   </div>
 </template>

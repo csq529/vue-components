@@ -342,6 +342,11 @@ export default new Router({
       path: "/AttrsDemo",
       component: () => import("@/views/AttrsDemo"),
       name: "AttrsDemo"
+    },
+    {
+      path: "/HookEvent",
+      component: () => import("@/views/HookEvent"),
+      name: "HookEvent"
     }
   ]
 });

@@ -105,6 +105,9 @@
       <router-link tag="li" :to="{ path: '/AttrsDemo' }">
         <button>AttrsDemo</button>
       </router-link>
+      <router-link tag="li" :to="{ path: '/HookEvent' }">
+        <button>HookEvent</button>
+      </router-link>
     </ul>
   </div>
 </template>

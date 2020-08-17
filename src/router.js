@@ -352,6 +352,11 @@ export default new Router({
       path: "/observable",
       component: () => import("@/views/observable"),
       name: "observable"
+    },
+    {
+      path: "/CssEffect",
+      component: () => import("@/views/CssEffect"),
+      name: "CssEffect"
     }
   ]
 });

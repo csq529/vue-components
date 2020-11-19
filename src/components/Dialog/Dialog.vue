@@ -1,5 +1,5 @@
 <template>
-  <transition name="dialog-fade">
+  <transition name="dialog-fade" v-if="dialogVisible">
     <div class="layer-mark" @click="hide">
       <div class="dialog-wrapper">
         <div class="dialog-main">
@@ -37,15 +37,38 @@ export default {
     },
     content: {
       type: String
+    },
+    show: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      dialogVisible: false
+    }
+  },
+  watch: {
+    show(val) {
+      this.setDialogVisible(val)
+    },
+    dialogVisible(val) {
+      this.$emit('update:show', val)
     }
   },
   methods: {
     hide () {
-      this.$emit('hide')
+      this.$emit("update:show", false)
     },
     sure () {
       this.$emit('sure')
+    },
+    setDialogVisible(val) {
+      this.dialogVisible = !!val
     }
+  },
+  created() {
+    this.setDialogVisible(this.show)
   }
 }
 </script>

@@ -114,6 +114,15 @@
       <router-link tag="li" :to="{ path: '/CssEffect' }">
         <button>css效果</button>
       </router-link>
+      <router-link tag="li" :to="{ path: '/ScopeSlot' }">
+        <button>作用域插槽</button>
+      </router-link>
+      <router-link tag="li" :to="{ path: '/NightMode' }">
+        <button>切换夜间模式</button>
+      </router-link>
+      <router-link tag="li" :to="{ path: '/triangle' }">
+        <button>用css实现三角标</button>
+      </router-link>
     </ul>
   </div>
 </template>

@@ -1,7 +1,11 @@
 <template>
   <div>
     <button @click="showDialog">ShowDialog</button>
-    <Dialog v-show="isShow" @hide="hideDailog" @sure="confirm"></Dialog>
+    <Dialog
+      :show.sync="isShow"
+      @hide="hideDailog"
+      @sure="confirm">
+    </Dialog>
   </div>
 </template>
 <script>
@@ -17,9 +21,9 @@ export default {
   methods: {
     showDialog () {
       this.isShow = true
-      console.log('isShow:', this.isShow)
     },
-    hideDailog () {
+    hideDailog (data) {
+      console.log('data:', data)
       this.isShow = false
     },
     confirm () {

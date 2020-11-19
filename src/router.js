@@ -357,6 +357,21 @@ export default new Router({
       path: "/CssEffect",
       component: () => import("@/views/CssEffect"),
       name: "CssEffect"
+    },
+    {
+      path: "/ScopeSlot",
+      component: () => import("@/views/ScopeSlot"),
+      name: "ScopeSlot"
+    },
+    {
+      path: "/NightMode", // 夜间模式
+      component: () => import("@/views/NightMode"),
+      name: "NightMode"
+    },
+    {
+      path: "/triangle", // css实现三角
+      component: () => import("@/views/triangle"),
+      name: "triangle"
     }
   ]
 });
